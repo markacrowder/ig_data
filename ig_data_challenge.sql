@@ -35,7 +35,7 @@ GROUP BY photos.id
 ORDER BY total DESC
 LIMIT 1;
 
-#challenge 5 - how many times does the average user post. Simply: number of photos divided by number of users.
+#challenge 5 - how many times does the average user post. (Mark: This is simple the number of photos divided by number of users.)
 
 select
 (select count(*) from photos) / (select count(*) from users) AS avg;
@@ -51,6 +51,5 @@ group by tags.id
 order by total DESC
 limit 5;
 
-#challenge 7
 	
 
